@@ -1,8 +1,8 @@
 ---
 title: "ReadAction"
-date: 2022-06-13T20:55:37+01:00
+date: 2026-03-10
 layout: "readaction-layout"
-image: "/readaction/cover.jpeg"
+aliases: ["/readaction/"]
 showHero: false
 ---
 
