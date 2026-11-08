@@ -21,8 +21,9 @@ showHero: false
   <div id="wc-hero" class="relative rounded-2xl overflow-hidden mb-6 shadow-lg">
     <!-- Generator header -->
     <div class="relative z-10 px-8 py-10 text-center">
-      <h2 class="text-2xl font-bold tracking-tight text-primary-400 mb-1 drop-shadow-md">
-        ✍️ Générateur aléatoire de contraintes d'écriture (Beta)
+      <h2 class="flex items-center justify-center gap-3 text-2xl font-bold tracking-tight text-primary-400 mb-1 drop-shadow-md">
+        <img src="./readaction-icon.svg" alt="" class="h-8 w-8 shrink-0" />
+        <span>Générateur aléatoire de contraintes d'écriture</span>
       </h2>
       <p class="text-sm text-neutral-200 italic">
         Créez un nouvel ensemble de contraintes et commencez à écrire !
