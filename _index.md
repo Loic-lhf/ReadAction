@@ -23,7 +23,7 @@ showHero: false
     <div class="px-6 py-8 text-center">
       <h2 class="flex items-center justify-center gap-3 text-2xl font-bold tracking-tight text-primary-600 dark:text-primary-400 mb-1">
         <img src="./readaction-icon.svg" alt="" class="wc-icon-light h-8 w-8 shrink-0" />
-        <img src="./readaction-icon-dark.png" alt="" class="wc-icon-dark h-8 w-8 shrink-0" />
+        <img src="./readaction-icon-dark.svg" alt="" class="wc-icon-dark h-8 w-8 shrink-0" />
         <span>Générateur aléatoire de contraintes d'écriture</span>
       </h2>
       <p class="text-sm text-neutral-500 dark:text-neutral-400 italic">
