@@ -9,15 +9,6 @@ showHero: false
 {{< rawhtml >}}
 <!-- Partially generated with claude.ai (i prefer to be honest) -->
 <style>
-  #wc-hero {
-    background-image: var(--wc-bg-img);
-    background-size: cover;
-    background-position: center;
-  }
-  html.dark #wc-hero {
-    background-image: var(--wc-bg-img-dark, var(--wc-bg-img));
-  }
-
   .wc-icon-dark { display: none; }
   html.dark .wc-icon-light { display: none; }
   html.dark .wc-icon-dark  { display: inline; }
@@ -26,15 +17,16 @@ showHero: false
 </style>
 
 <div class="not-prose my-8">
-  <div id="wc-hero" class="relative rounded-2xl overflow-hidden mb-6 shadow-lg">
-    <!-- Generator header -->
-    <div class="relative z-10 px-8 py-10 text-center">
-      <h2 class="flex items-center justify-center gap-3 text-2xl font-bold tracking-tight text-primary-400 mb-1 drop-shadow-md">
+  <!-- Generator header -->
+  <div class="rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 shadow-md overflow-hidden max-w-3xl mx-auto mb-6">
+    <div class="h-1 w-full bg-gradient-to-r from-primary-500 via-primary-400 to-primary-600"></div>
+    <div class="px-6 py-8 text-center">
+      <h2 class="flex items-center justify-center gap-3 text-2xl font-bold tracking-tight text-primary-600 dark:text-primary-400 mb-1">
         <img src="./readaction-icon.svg" alt="" class="wc-icon-light h-8 w-8 shrink-0" />
-        <img src="./readaction-icon-dark.svg" alt="" class="wc-icon-dark h-8 w-8 shrink-0" />
+        <img src="./readaction-icon-dark.png" alt="" class="wc-icon-dark h-8 w-8 shrink-0" />
         <span>Générateur aléatoire de contraintes d'écriture</span>
       </h2>
-      <p class="text-sm text-neutral-200 italic">
+      <p class="text-sm text-neutral-500 dark:text-neutral-400 italic">
         Créez un nouvel ensemble de contraintes et commencez à écrire !
       </p>
     </div>
@@ -80,21 +72,6 @@ showHero: false
 <script src="./fr-constraints.js"></script>
 
 <script>
-/* ================================================================
-   Apply background image to hero — FIX: removed wc-body-bg reference
-   ================================================================ */
-(function () {
-  const hero = document.getElementById('wc-hero');
-  if (WC_COVER_IMAGE) {
-    hero.style.setProperty('--wc-bg-img', `url('${WC_COVER_IMAGE}')`);
-    if (typeof WC_COVER_IMAGE_DARK !== 'undefined' && WC_COVER_IMAGE_DARK) {
-      hero.style.setProperty('--wc-bg-img-dark', `url('${WC_COVER_IMAGE_DARK}')`);
-    }
-  } else {
-    hero.style.background = '#292524';
-  }
-})();
-
 /* ================================================================
    GENERATOR LOGIC
    ================================================================ */
